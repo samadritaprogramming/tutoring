@@ -1,11 +1,43 @@
 /* =========================
+   COLOR VARIABLES
+========================= */
+
+:root {
+
+    --cream: #fff8f1;
+    --cream-dark: #f7e8dc;
+
+    --orange: #c97855;
+    --orange-light: #e5ae92;
+    --orange-pale: #f3d8c8;
+
+    --brown: #5f463c;
+    --brown-light: #80685d;
+
+    --white: #ffffff;
+
+    --border: #e5cfc2;
+
+}
+
+
+/* =========================
    GLOBAL STYLES
 ========================= */
 
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
 }
 
 
@@ -13,9 +45,9 @@ body {
 
     font-family: "Georgia", serif;
 
-    background: #fff8f1;
+    background: var(--cream);
 
-    color: #65483c;
+    color: var(--brown);
 
     line-height: 1.7;
 
@@ -33,7 +65,7 @@ h1,
 h2,
 h3 {
 
-    color: #b9684b;
+    color: var(--orange);
 
 }
 
@@ -60,10 +92,18 @@ a {
 
     color: inherit;
 
+    text-decoration: none;
+
 }
 
 
+button {
 
+    font-family: "Georgia", serif;
+
+    text-decoration: none;
+
+}
 
 
 /* =========================
@@ -82,7 +122,7 @@ a {
 
     z-index: 100;
 
-    border-bottom: 1px solid #efd8ca;
+    border-bottom: 1px solid var(--border);
 
 }
 
@@ -104,7 +144,7 @@ a {
 
     font-weight: bold;
 
-    color: #b9684b;
+    color: var(--orange);
 
 }
 
@@ -124,7 +164,7 @@ a {
 
     text-decoration: none;
 
-    color: #725447;
+    color: var(--brown);
 
     transition: 0.3s;
 
@@ -133,12 +173,9 @@ a {
 
 .nav-links a:hover {
 
-    color: #d48767;
+    color: var(--orange);
 
 }
-
-
-
 
 
 /* =========================
@@ -167,7 +204,7 @@ a {
 
 .primary-button {
 
-    background: #d48a68;
+    background: var(--orange);
 
     color: white;
 
@@ -178,7 +215,7 @@ a {
 
 .primary-button:hover {
 
-    background: #b9684b;
+    background: #ad6245;
 
     transform: translateY(-3px);
 
@@ -189,23 +226,20 @@ a {
 
     background: transparent;
 
-    color: #b9684b;
+    color: var(--orange);
 
-    border: 1px solid #d48a68;
+    border: 1px solid var(--orange);
 
 }
 
 
 .secondary-button:hover {
 
-    background: #f4d8ca;
+    background: var(--orange-pale);
 
     transform: translateY(-3px);
 
 }
-
-
-
 
 
 /* =========================
@@ -259,7 +293,7 @@ a {
 
 .hero h1 span {
 
-    color: #d48767;
+    color: var(--orange);
 
 }
 
@@ -286,9 +320,6 @@ a {
     margin-top: 10px;
 
 }
-
-
-
 
 
 /* =========================
@@ -321,7 +352,7 @@ a {
 
     flex: 1;
 
-    background: #fff8f1;
+    background: var(--cream);
 
     padding: 40px;
 
@@ -331,7 +362,7 @@ a {
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.12);
+        0 10px 25px rgba(170, 105, 75, 0.10);
 
     transition: 0.3s;
 
@@ -347,7 +378,7 @@ a {
 
 .path-icon {
 
-    color: #d48767;
+    color: var(--orange);
 
     font-size: 1rem;
 
@@ -367,7 +398,7 @@ a {
 
 .path-content p {
 
-    color: #76594c;
+    color: var(--brown-light);
 
 }
 
@@ -378,7 +409,7 @@ a {
 
     margin-top: 15px;
 
-    color: #b9684b;
+    color: var(--orange);
 
     font-weight: bold;
 
@@ -389,12 +420,9 @@ a {
 
 .path-link:hover {
 
-    color: #d48767;
+    color: #ad6245;
 
 }
-
-
-
 
 
 /* =========================
@@ -414,7 +442,7 @@ a {
 
 .section-label {
 
-    color: #d48767;
+    color: var(--orange);
 
     font-weight: bold;
 
@@ -437,9 +465,6 @@ a {
     margin: auto;
 
 }
-
-
-
 
 
 /* =========================
@@ -484,7 +509,7 @@ a {
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.1);
+        0 10px 25px rgba(170, 105, 75, 0.08);
 
     transition: 0.3s;
 
@@ -500,7 +525,7 @@ a {
 
 .feature-icon {
 
-    color: #d48767;
+    color: var(--orange);
 
     font-size: 1.2rem;
 
@@ -520,14 +545,11 @@ a {
 
     margin-top: 8px;
 
-    color: #76594c;
+    color: var(--brown-light);
 
     font-size: 0.95rem;
 
 }
-
-
-
 
 
 /* =========================
@@ -560,7 +582,7 @@ a {
 
     flex: 1;
 
-    background: #fff8f1;
+    background: var(--cream);
 
     padding: 35px;
 
@@ -570,14 +592,14 @@ a {
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.1);
+        0 10px 25px rgba(170, 105, 75, 0.08);
 
 }
 
 
 .step-number {
 
-    color: #d48767;
+    color: var(--orange);
 
     font-size: 1.4rem;
 
@@ -595,14 +617,11 @@ a {
 
 .step p {
 
-    color: #76594c;
+    color: var(--brown-light);
 
     font-size: 0.95rem;
 
 }
-
-
-
 
 
 /* =========================
@@ -613,7 +632,7 @@ a {
 
     text-align: center;
 
-    background: #f6ddcf;
+    background: var(--cream-dark);
 
 }
 
@@ -641,9 +660,6 @@ a {
     margin: auto;
 
 }
-
-
-
 
 
 /* =========================
@@ -688,9 +704,6 @@ a {
 }
 
 
-
-
-
 /* =========================
    SEARCH / FILTERS
 ========================= */
@@ -703,13 +716,13 @@ a {
 
     padding: 25px;
 
-    background: #fff8f1;
+    background: var(--cream);
 
     border-radius: 25px;
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.1);
+        0 10px 25px rgba(170, 105, 75, 0.08);
 
     display: grid;
 
@@ -728,13 +741,13 @@ a {
 
     padding: 12px 15px;
 
-    border: 1px solid #e2cabc;
+    border: 1px solid var(--border);
 
     border-radius: 12px;
 
     background: white;
 
-    color: #65483c;
+    color: var(--brown);
 
     font-family: "Georgia", serif;
 
@@ -746,7 +759,7 @@ a {
 .search-wrapper input:focus,
 .filter-wrapper select:focus {
 
-    border-color: #d48767;
+    border-color: var(--orange);
 
 }
 
@@ -759,12 +772,9 @@ a {
 
     font-size: 0.85rem;
 
-    color: #76594c;
+    color: var(--brown-light);
 
 }
-
-
-
 
 
 /* =========================
@@ -775,7 +785,7 @@ a {
 
     max-width: 1000px;
 
-    margin: 45px auto 20px;
+    margin: 45px auto 25px;
 
     display: flex;
 
@@ -801,7 +811,7 @@ a {
 
     font-size: 0.9rem;
 
-    color: #876b5d;
+    color: var(--brown-light);
 
 }
 
@@ -823,24 +833,30 @@ a {
 
 .tutor-card {
 
-    background: #fff8f1;
+    background: var(--white);
 
-    padding: 30px;
+    padding: 32px;
 
-    border-radius: 25px;
+    border-radius: 22px;
+
+    border: 1px solid var(--border);
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.1);
+        0 8px 22px rgba(170, 105, 75, 0.08);
 
-    transition: 0.3s;
+    transition: 0.25s ease;
 
 }
 
 
 .tutor-card:hover {
 
-    transform: translateY(-6px);
+    transform: translateY(-5px);
+
+    box-shadow:
+
+        0 12px 28px rgba(170, 105, 75, 0.12);
 
 }
 
@@ -851,20 +867,22 @@ a {
 
     align-items: center;
 
-    gap: 15px;
+    gap: 16px;
 
 }
 
 
 .tutor-avatar {
 
-    width: 60px;
+    width: 62px;
 
-    height: 60px;
+    height: 62px;
+
+    flex-shrink: 0;
 
     border-radius: 50%;
 
-    background: #e5b29a;
+    background: var(--orange-light);
 
     display: flex;
 
@@ -883,7 +901,9 @@ a {
 
 .tutor-basic-info h3 {
 
-    font-size: 1.4rem;
+    font-size: 1.45rem;
+
+    margin-bottom: 2px;
 
 }
 
@@ -892,36 +912,40 @@ a {
 
     font-size: 0.8rem;
 
-    color: #c47759;
+    color: var(--orange);
 
 }
 
 
 .tutor-introduction {
 
-    margin-top: 18px;
+    margin-top: 20px;
 
-    color: #76594c;
+    color: var(--brown-light);
 
     font-size: 0.95rem;
+
+    line-height: 1.65;
 
 }
 
 
 .tutor-info-section {
 
-    margin-top: 15px;
+    margin-top: 20px;
 
 }
 
 
 .info-label {
 
-    color: #b9684b;
+    color: var(--orange);
 
-    font-size: 0.8rem;
+    font-size: 0.78rem;
 
     font-weight: bold;
+
+    margin-bottom: 7px;
 
 }
 
@@ -932,57 +956,68 @@ a {
 
     flex-wrap: wrap;
 
-    gap: 7px;
+    gap: 8px;
 
-    margin-top: 6px;
+    margin-top: 7px;
 
 }
 
 
 .tag {
 
-    background: #f1d8ca;
+    display: inline-block;
 
-    color: #76594c;
+    background: var(--orange-pale);
 
-    padding: 5px 10px;
+    color: var(--brown);
 
-    border-radius: 15px;
+    padding: 7px 12px;
+
+    border-radius: 16px;
 
     font-size: 0.8rem;
+
+    line-height: 1.2;
+
+    white-space: nowrap;
 
 }
 
 
 .view-profile-button {
 
-    margin-top: 20px;
+    display: inline-block;
 
-    padding: 10px 20px;
+    margin-top: 24px;
 
-    background: #d48a68;
+    padding: 11px 22px;
+
+    background: var(--orange);
 
     color: white;
 
     border: none;
 
-    border-radius: 20px;
+    border-radius: 22px;
 
     cursor: pointer;
 
     font-family: "Georgia", serif;
+
+    font-size: 0.9rem;
+
+    transition: 0.25s ease;
 
 }
 
 
 .view-profile-button:hover {
 
-    background: #b9684b;
+    background: #ad6245;
+
+    transform: translateY(-2px);
 
 }
-
-
-
 
 
 /* =========================
@@ -1023,9 +1058,6 @@ a {
 }
 
 
-
-
-
 /* =========================
    TUTOR PROFILE
 ========================= */
@@ -1043,7 +1075,7 @@ a {
 
 .profile-back a {
 
-    color: #b9684b;
+    color: var(--orange);
 
     text-decoration: none;
 
@@ -1077,7 +1109,7 @@ a {
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.1);
+        0 10px 25px rgba(170, 105, 75, 0.08);
 
 }
 
@@ -1092,7 +1124,7 @@ a {
 
     border-radius: 50%;
 
-    background: #e5b29a;
+    background: var(--orange-light);
 
     display: flex;
 
@@ -1118,7 +1150,7 @@ a {
 
 .profile-subtitle {
 
-    color: #876b5d;
+    color: var(--brown-light);
 
 }
 
@@ -1145,9 +1177,6 @@ a {
 }
 
 
-
-
-
 /* =========================
    PROFILE CONTENT
 ========================= */
@@ -1169,7 +1198,7 @@ a {
 
     padding: 25px 0;
 
-    border-bottom: 1px solid #ead5c8;
+    border-bottom: 1px solid var(--border);
 
 }
 
@@ -1185,7 +1214,7 @@ a {
 
 .profile-section > p {
 
-    color: #76594c;
+    color: var(--brown-light);
 
 }
 
@@ -1213,7 +1242,7 @@ a {
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.1);
+        0 10px 25px rgba(170, 105, 75, 0.08);
 
 }
 
@@ -1235,7 +1264,7 @@ a {
 
     padding: 10px 0;
 
-    border-bottom: 1px solid #ead5c8;
+    border-bottom: 1px solid var(--border);
 
     font-size: 0.9rem;
 
@@ -1244,14 +1273,14 @@ a {
 
 .detail-row span {
 
-    color: #876b5d;
+    color: var(--brown-light);
 
 }
 
 
 .verified-text {
 
-    color: #c47759;
+    color: var(--orange);
 
 }
 
@@ -1272,9 +1301,6 @@ a {
     text-align: center;
 
 }
-
-
-
 
 
 /* =========================
@@ -1331,18 +1357,15 @@ a {
 
     padding: 40px;
 
-    background: #fff8f1;
+    background: var(--cream);
 
     border-radius: 25px;
 
     box-shadow:
 
-        0 10px 25px rgba(190, 120, 85, 0.1);
+        0 10px 25px rgba(170, 105, 75, 0.08);
 
 }
-
-
-
 
 
 /* =========================
@@ -1364,7 +1387,7 @@ a {
 
     font-weight: bold;
 
-    color: #65483c;
+    color: var(--brown);
 
 }
 
@@ -1377,13 +1400,13 @@ a {
 
     padding: 13px 15px;
 
-    border: 1px solid #e1c9bb;
+    border: 1px solid var(--border);
 
     border-radius: 12px;
 
     background: white;
 
-    color: #65483c;
+    color: var(--brown);
 
     font-family: "Georgia", serif;
 
@@ -1407,7 +1430,7 @@ a {
 .form-group textarea:focus,
 .form-group select:focus {
 
-    border-color: #d48767;
+    border-color: var(--orange);
 
 }
 
@@ -1428,9 +1451,6 @@ a {
 }
 
 
-
-
-
 /* =========================
    SUBJECT / GRADE SELECTION
 ========================= */
@@ -1449,21 +1469,29 @@ a {
 .selection-card,
 .grade-card {
 
-    padding: 12px;
+    min-height: 48px;
 
-    border: 1px solid #e1c9bb;
+    padding: 12px 16px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border: 1px solid var(--border);
 
     border-radius: 12px;
 
     background: white;
 
-    color: #725447;
+    color: var(--brown);
 
     text-align: center;
 
     cursor: pointer;
 
-    transition: 0.25s;
+    transition: 0.2s ease;
 
 }
 
@@ -1471,9 +1499,9 @@ a {
 .selection-card:hover,
 .grade-card:hover {
 
-    border-color: #d48767;
+    border-color: var(--orange);
 
-    background: #fff0e7;
+    background: #fff4ed;
 
 }
 
@@ -1481,9 +1509,9 @@ a {
 .selection-card.selected,
 .grade-card.selected {
 
-    background: #d48767;
+    background: var(--orange);
 
-    border-color: #d48767;
+    border-color: var(--orange);
 
     color: white;
 
@@ -1501,16 +1529,13 @@ a {
 }
 
 
-
-
-
 /* =========================
    FOOTER
 ========================= */
 
 .footer {
 
-    background: #f3d5c5;
+    background: #f1d7c7;
 
     padding: 35px 10%;
 
@@ -1521,7 +1546,7 @@ a {
 
 .footer-main p {
 
-    color: #76594c;
+    color: var(--brown-light);
 
     font-size: 0.9rem;
 
@@ -1543,7 +1568,7 @@ a {
 
 .footer-links a {
 
-    color: #76594c;
+    color: var(--brown-light);
 
     text-decoration: none;
 
@@ -1554,7 +1579,7 @@ a {
 
 .footer-links a:hover {
 
-    color: #b9684b;
+    color: var(--orange);
 
 }
 
@@ -1570,7 +1595,17 @@ a {
 }
 
 
+/* =========================
+   IMAGES
+========================= */
 
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
 
 
 /* =========================
@@ -1578,7 +1613,6 @@ a {
 ========================= */
 
 @media (max-width: 800px) {
-
 
     .navbar {
 
