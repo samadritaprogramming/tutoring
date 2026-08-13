@@ -1,1 +1,1663 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Become a Tutor | StudyConnect</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================
+     NAVIGATION
+================================== -->
+
+<header class="navbar">
+
+    <a href="index.html"
+       class="logo">
+
+        Study<span>Connect</span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="find-tutor.html">
+            Find a Tutor
+        </a>
+
+        <a href="become-tutor.html"
+           class="active">
+
+            Become a Tutor
+
+        </a>
+
+        <a href="login.html"
+           class="login-link">
+
+            Log In
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ==================================
+     HEADER
+================================== -->
+
+<section class="application-header">
+
+    <div class="section-label">
+        Join StudyConnect
+    </div>
+
+
+    <h1>
+        Become a tutor.
+    </h1>
+
+
+    <p>
+        Share what you know, help students grow,
+        and make a difference through tutoring.
+    </p>
+
+</section>
+
+
+
+<!-- ==================================
+     PROGRESS BAR
+================================== -->
+
+<section class="application-progress">
+
+    <div class="progress-container">
+
+
+        <div class="progress-step active"
+             id="progressStep1">
+
+            <div class="progress-number">
+                1
+            </div>
+
+            <span>
+                About You
+            </span>
+
+        </div>
+
+
+        <div class="progress-line"
+             id="progressLine1">
+        </div>
+
+
+        <div class="progress-step"
+             id="progressStep2">
+
+            <div class="progress-number">
+                2
+            </div>
+
+            <span>
+                Subjects
+            </span>
+
+        </div>
+
+
+        <div class="progress-line"
+             id="progressLine2">
+        </div>
+
+
+        <div class="progress-step"
+             id="progressStep3">
+
+            <div class="progress-number">
+                3
+            </div>
+
+            <span>
+                Review
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================
+     APPLICATION CONTAINER
+================================== -->
+
+<section class="application-section">
+
+
+<div class="application-card">
+
+
+<!-- ==================================
+     STEP 1
+================================== -->
+
+<div class="application-step active"
+     id="step1">
+
+
+    <div class="step-heading">
+
+        <span class="step-small-label">
+            Step 1 of 3
+        </span>
+
+        <h2>
+            Tell us about yourself.
+        </h2>
+
+        <p>
+            Some of this information will appear on your
+            public tutoring profile. Your contact information
+            will remain private.
+        </p>
+
+    </div>
+
+
+
+    <!-- NAME -->
+
+    <div class="form-row">
+
+
+        <div class="form-group">
+
+            <label for="firstName">
+                First Name
+            </label>
+
+            <input
+                type="text"
+                id="firstName"
+                placeholder="Alex"
+                required
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label for="lastName">
+                Last Name
+            </label>
+
+            <input
+                type="text"
+                id="lastName"
+                placeholder="Johnson"
+                required
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- EMAIL -->
+
+    <div class="form-group">
+
+        <label for="email">
+            Email Address
+        </label>
+
+        <input
+            type="email"
+            id="email"
+            placeholder="alex@example.com"
+            required
+        >
+
+        <small>
+            Your email will only be used for account
+            communication and tutor verification.
+        </small>
+
+    </div>
+
+
+
+    <!-- PHONE -->
+
+    <div class="form-group">
+
+        <label for="phone">
+            Phone Number
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="(555) 123-4567"
+            required
+        >
+
+        <small>
+            Your phone number will never be displayed publicly.
+        </small>
+
+    </div>
+
+
+
+    <!-- EDUCATION -->
+
+    <div class="form-group">
+
+        <label for="education">
+            School / Education
+        </label>
+
+        <input
+            type="text"
+            id="education"
+            placeholder="Example: Neuqua Valley High School"
+        >
+
+    </div>
+
+
+
+    <!-- INTRODUCTION -->
+
+    <div class="form-group">
+
+        <label for="introduction">
+
+            Write an introduction for yourself
+
+            <span class="required-label">
+                *
+            </span>
+
+        </label>
+
+
+        <p class="field-description">
+            This introduction will be shown to parents
+            and students on your public tutor profile.
+        </p>
+
+
+        <textarea
+            id="introduction"
+            rows="7"
+            maxlength="600"
+            placeholder="Tell students and parents a little about yourself, your experience, and why you enjoy helping others learn..."
+            required
+        ></textarea>
+
+
+        <div class="character-count">
+            <span id="characterCount">
+                0
+            </span>
+            / 600
+        </div>
+
+    </div>
+
+
+
+    <!-- EXPERIENCE -->
+
+    <div class="form-group">
+
+        <label for="experience">
+            Relevant Tutoring Experience
+        </label>
+
+
+        <textarea
+            id="experience"
+            rows="5"
+            placeholder="Tell us about tutoring, teaching, mentoring, or other relevant experience..."
+        ></textarea>
+
+    </div>
+
+
+
+    <div class="privacy-notice">
+
+        <span class="privacy-notice-icon">
+            🔒
+        </span>
+
+        <div>
+
+            <strong>
+                Your information is protected.
+            </strong>
+
+            <p>
+                Your phone number and email are collected
+                for verification and communication only.
+                They will not appear on your public profile.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <button
+        class="primary-button application-button"
+        onclick="goToStep(2)"
+    >
+
+        Continue
+
+        <span>→</span>
+
+    </button>
+
+
+</div>
+
+
+
+<!-- ==================================
+     STEP 2
+================================== -->
+
+<div class="application-step"
+     id="step2">
+
+
+    <div class="step-heading">
+
+        <span class="step-small-label">
+            Step 2 of 3
+        </span>
+
+        <h2>
+            What can you tutor?
+        </h2>
+
+        <p>
+            Select all subjects and grade levels
+            you're comfortable tutoring.
+        </p>
+
+    </div>
+
+
+
+    <!-- SUBJECTS -->
+
+    <div class="selection-section">
+
+        <div class="selection-heading">
+
+            <h3>
+                Subjects
+            </h3>
+
+            <span>
+                Select all that apply
+            </span>
+
+        </div>
+
+
+        <div class="selection-grid">
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="Math"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    ∑
+                </span>
+
+                <span>
+                    Math
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="Science"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    ⚗
+                </span>
+
+                <span>
+                    Science
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="English"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    Aa
+                </span>
+
+                <span>
+                    English
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="History"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    ◈
+                </span>
+
+                <span>
+                    History
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="Computer Science"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    &lt;/&gt;
+                </span>
+
+                <span>
+                    Computer Science
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="Spanish"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    Ñ
+                </span>
+
+                <span>
+                    Spanish
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="French"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    É
+                </span>
+
+                <span>
+                    French
+                </span>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="selection-card"
+                data-type="subject"
+                data-value="Other"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="selection-icon">
+                    +
+                </span>
+
+                <span>
+                    Other
+                </span>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- GRADES -->
+
+    <div class="selection-section">
+
+        <div class="selection-heading">
+
+            <h3>
+                Grade Levels
+            </h3>
+
+            <span>
+                Select all that apply
+            </span>
+
+        </div>
+
+
+        <div class="grade-grid">
+
+
+            <button
+                type="button"
+                class="grade-card"
+                data-type="grade"
+                data-value="Elementary"
+                onclick="toggleSelection(this)"
+            >
+
+                Elementary
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="grade-card"
+                data-type="grade"
+                data-value="Middle School"
+                onclick="toggleSelection(this)"
+            >
+
+                Middle School
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="grade-card"
+                data-type="grade"
+                data-value="9th Grade"
+                onclick="toggleSelection(this)"
+            >
+
+                9th Grade
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="grade-card"
+                data-type="grade"
+                data-value="10th Grade"
+                onclick="toggleSelection(this)"
+            >
+
+                10th Grade
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="grade-card"
+                data-type="grade"
+                data-value="11th Grade"
+                onclick="toggleSelection(this)"
+            >
+
+                11th Grade
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="grade-card"
+                data-type="grade"
+                data-value="12th Grade"
+                onclick="toggleSelection(this)"
+            >
+
+                12th Grade
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TUTORING FORMAT -->
+
+    <div class="selection-section">
+
+        <div class="selection-heading">
+
+            <h3>
+                Tutoring Format
+            </h3>
+
+            <span>
+                Select all that apply
+            </span>
+
+        </div>
+
+
+        <div class="format-options">
+
+
+            <button
+                type="button"
+                class="format-card"
+                data-type="format"
+                data-value="Online"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="format-icon">
+                    💻
+                </span>
+
+                <div>
+
+                    <strong>
+                        Online
+                    </strong>
+
+                    <small>
+                        Virtual tutoring
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="format-card"
+                data-type="format"
+                data-value="In Person"
+                onclick="toggleSelection(this)"
+            >
+
+                <span class="format-icon">
+                    👥
+                </span>
+
+                <div>
+
+                    <strong>
+                        In Person
+                    </strong>
+
+                    <small>
+                        In-person tutoring
+                    </small>
+
+                </div>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="application-buttons">
+
+        <button
+            class="secondary-button"
+            onclick="goToStep(1)"
+        >
+
+            ← Back
+
+        </button>
+
+
+        <button
+            class="primary-button"
+            onclick="goToStep(3)"
+        >
+
+            Review Profile
+
+            <span>→</span>
+
+        </button>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ==================================
+     STEP 3
+================================== -->
+
+<div class="application-step"
+     id="step3">
+
+
+    <div class="step-heading">
+
+        <span class="step-small-label">
+            Step 3 of 3
+        </span>
+
+        <h2>
+            Review your profile.
+        </h2>
+
+        <p>
+            This is what parents and students will see
+            once your application has been approved.
+        </p>
+
+    </div>
+
+
+
+    <!-- PROFILE PREVIEW -->
+
+    <div class="profile-preview">
+
+
+        <div class="preview-header">
+
+            <div class="preview-avatar"
+                 id="previewAvatar">
+
+                A
+
+            </div>
+
+
+            <div>
+
+                <h3 id="previewName">
+                    Alex Johnson
+                </h3>
+
+
+                <div class="pending-badge">
+                    Application Pending
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- INTRO -->
+
+        <div class="preview-section">
+
+            <span class="preview-label">
+                About
+            </span>
+
+
+            <p id="previewIntroduction">
+                Your introduction will appear here.
+            </p>
+
+        </div>
+
+
+
+        <!-- SUBJECTS -->
+
+        <div class="preview-section">
+
+            <span class="preview-label">
+                Subjects
+            </span>
+
+
+            <div
+                class="preview-tags"
+                id="previewSubjects"
+            >
+
+                <span class="empty-preview">
+                    None selected
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- GRADES -->
+
+        <div class="preview-section">
+
+            <span class="preview-label">
+                Grade Levels
+            </span>
+
+
+            <div
+                class="preview-tags"
+                id="previewGrades"
+            >
+
+                <span class="empty-preview">
+                    None selected
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- FORMAT -->
+
+        <div class="preview-section">
+
+            <span class="preview-label">
+                Tutoring Format
+            </span>
+
+
+            <div
+                class="preview-tags"
+                id="previewFormat"
+            >
+
+                <span class="empty-preview">
+                    None selected
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- TERMS -->
+
+    <div class="terms-box">
+
+
+        <label class="checkbox-row">
+
+            <input
+                type="checkbox"
+                id="termsAgreement"
+            >
+
+            <span>
+
+                I have read and agree to the
+                <a href="terms.html"
+                   target="_blank">
+
+                    Tutor Terms & Agreement
+
+                </a>
+                and confirm that the information
+                I provided is accurate.
+
+            </span>
+
+        </label>
+
+
+
+        <label class="checkbox-row">
+
+            <input
+                type="checkbox"
+                id="accurateInformation"
+            >
+
+            <span>
+
+                I understand that my application
+                will be reviewed before my profile
+                is published.
+
+            </span>
+
+        </label>
+
+    </div>
+
+
+
+    <div class="application-buttons">
+
+
+        <button
+            class="secondary-button"
+            onclick="goToStep(2)"
+        >
+
+            ← Back
+
+        </button>
+
+
+        <button
+            class="primary-button"
+            onclick="submitApplication()"
+        >
+
+            Submit for Review
+
+        </button>
+
+    </div>
+
+
+</div>
+
+
+
+<!-- ==================================
+     SUCCESS
+================================== -->
+
+<div class="application-success"
+     id="applicationSuccess">
+
+
+    <div class="success-circle">
+        ✓
+    </div>
+
+
+    <div class="section-label">
+        Application received
+    </div>
+
+
+    <h2>
+        You're officially on your way.
+    </h2>
+
+
+    <p>
+
+        Your tutor application has been submitted
+        for review. We'll let you know once your
+        profile has been approved.
+
+    </p>
+
+
+    <div class="success-note">
+
+        <strong>
+            What happens next?
+        </strong>
+
+        <span>
+            Your information will be reviewed before
+            your profile is published.
+        </span>
+
+    </div>
+
+
+    <a href="index.html"
+       class="primary-button">
+
+        Back to Home
+
+    </a>
+
+
+</div>
+
+
+</div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ==================================
+     FOOTER
+================================== -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <a href="index.html"
+           class="logo footer-logo">
+
+            Study<span>Connect</span>
+
+        </a>
+
+
+        <p>
+            Connecting students with trusted tutors.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="find-tutor.html">
+            Find a Tutor
+        </a>
+
+        <a href="become-tutor.html">
+            Become a Tutor
+        </a>
+
+        <a href="terms.html">
+            Terms
+        </a>
+
+        <a href="privacy.html">
+            Privacy
+        </a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 StudyConnect. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================
+     JAVASCRIPT
+================================== -->
+
+<script>
+
+
+/* =================================
+   STEP NAVIGATION
+================================= */
+
+function goToStep(step) {
+
+
+    /* Basic validation for step 1 */
+
+    if (step === 2) {
+
+        const firstName =
+            document.getElementById("firstName").value.trim();
+
+        const lastName =
+            document.getElementById("lastName").value.trim();
+
+        const email =
+            document.getElementById("email").value.trim();
+
+        const phone =
+            document.getElementById("phone").value.trim();
+
+        const introduction =
+            document.getElementById("introduction").value.trim();
+
+
+        if (
+            !firstName ||
+            !lastName ||
+            !email ||
+            !phone ||
+            !introduction
+        ) {
+
+            alert(
+                "Please complete all required fields before continuing."
+            );
+
+            return;
+
+        }
+
+    }
+
+
+
+    /* Require selections before review */
+
+    if (step === 3) {
+
+        const subjects =
+            document.querySelectorAll(
+                '[data-type="subject"].selected'
+            );
+
+
+        const grades =
+            document.querySelectorAll(
+                '[data-type="grade"].selected'
+            );
+
+
+        if (subjects.length === 0) {
+
+            alert(
+                "Please select at least one subject."
+            );
+
+            return;
+
+        }
+
+
+        if (grades.length === 0) {
+
+            alert(
+                "Please select at least one grade level."
+            );
+
+            return;
+
+        }
+
+
+        updatePreview();
+
+    }
+
+
+
+    /* Hide all steps */
+
+    document
+        .querySelectorAll(".application-step")
+        .forEach(stepElement => {
+
+            stepElement.classList.remove("active");
+
+        });
+
+
+
+    /* Show selected step */
+
+    document
+        .getElementById("step" + step)
+        .classList.add("active");
+
+
+
+    /* Update progress */
+
+    updateProgress(step);
+
+
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+
+/* =================================
+   PROGRESS
+================================= */
+
+function updateProgress(step) {
+
+
+    const steps = [
+
+        document.getElementById("progressStep1"),
+
+        document.getElementById("progressStep2"),
+
+        document.getElementById("progressStep3")
+
+    ];
+
+
+    const lines = [
+
+        document.getElementById("progressLine1"),
+
+        document.getElementById("progressLine2")
+
+    ];
+
+
+
+    steps.forEach((element, index) => {
+
+        if (index < step) {
+
+            element.classList.add("active");
+
+        } else {
+
+            element.classList.remove("active");
+
+        }
+
+    });
+
+
+
+    lines.forEach((line, index) => {
+
+        if (index < step - 1) {
+
+            line.classList.add("active");
+
+        } else {
+
+            line.classList.remove("active");
+
+        }
+
+    });
+
+}
+
+
+
+/* =================================
+   SELECTION BOXES
+================================= */
+
+function toggleSelection(element) {
+
+    element.classList.toggle("selected");
+
+}
+
+
+
+/* =================================
+   PROFILE PREVIEW
+================================= */
+
+function updatePreview() {
+
+
+    const firstName =
+        document.getElementById("firstName")
+            .value.trim();
+
+
+    const lastName =
+        document.getElementById("lastName")
+            .value.trim();
+
+
+    const introduction =
+        document.getElementById("introduction")
+            .value.trim();
+
+
+
+    /* Name */
+
+    const fullName =
+        `${firstName} ${lastName}`.trim();
+
+
+    document.getElementById("previewName")
+        .textContent =
+            fullName || "Your Name";
+
+
+
+    /* Avatar */
+
+    document.getElementById("previewAvatar")
+        .textContent =
+            firstName
+                ? firstName.charAt(0).toUpperCase()
+                : "?";
+
+
+
+    /* Introduction */
+
+    document.getElementById("previewIntroduction")
+        .textContent =
+            introduction ||
+            "Your introduction will appear here.";
+
+
+
+    /* Subjects */
+
+    const subjects =
+        document.querySelectorAll(
+            '[data-type="subject"].selected'
+        );
+
+
+    const subjectContainer =
+        document.getElementById("previewSubjects");
+
+
+    if (subjects.length === 0) {
+
+        subjectContainer.innerHTML =
+            `<span class="empty-preview">
+                None selected
+            </span>`;
+
+    } else {
+
+        subjectContainer.innerHTML = "";
+
+        subjects.forEach(subject => {
+
+            const tag =
+                document.createElement("span");
+
+            tag.className = "preview-tag";
+
+            tag.textContent =
+                subject.dataset.value;
+
+            subjectContainer.appendChild(tag);
+
+        });
+
+    }
+
+
+
+    /* Grades */
+
+    const grades =
+        document.querySelectorAll(
+            '[data-type="grade"].selected'
+        );
+
+
+    const gradeContainer =
+        document.getElementById("previewGrades");
+
+
+    if (grades.length === 0) {
+
+        gradeContainer.innerHTML =
+            `<span class="empty-preview">
+                None selected
+            </span>`;
+
+    } else {
+
+        gradeContainer.innerHTML = "";
+
+        grades.forEach(grade => {
+
+            const tag =
+                document.createElement("span");
+
+            tag.className = "preview-tag";
+
+            tag.textContent =
+                grade.dataset.value;
+
+            gradeContainer.appendChild(tag);
+
+        });
+
+    }
+
+
+
+    /* Format */
+
+    const formats =
+        document.querySelectorAll(
+            '[data-type="format"].selected'
+        );
+
+
+    const formatContainer =
+        document.getElementById("previewFormat");
+
+
+    if (formats.length === 0) {
+
+        formatContainer.innerHTML =
+            `<span class="empty-preview">
+                None selected
+            </span>`;
+
+    } else {
+
+        formatContainer.innerHTML = "";
+
+        formats.forEach(format => {
+
+            const tag =
+                document.createElement("span");
+
+            tag.className = "preview-tag";
+
+            tag.textContent =
+                format.dataset.value;
+
+            formatContainer.appendChild(tag);
+
+        });
+
+    }
+
+}
+
+
+
+/* =================================
+   CHARACTER COUNTER
+================================= */
+
+const introduction =
+    document.getElementById("introduction");
+
+
+const characterCount =
+    document.getElementById("characterCount");
+
+
+introduction.addEventListener(
+    "input",
+    function () {
+
+        characterCount.textContent =
+            this.value.length;
+
+    }
+);
+
+
+
+/* =================================
+   SUBMIT APPLICATION
+================================= */
+
+function submitApplication() {
+
+
+    const terms =
+        document.getElementById("termsAgreement")
+            .checked;
+
+
+    const accurate =
+        document.getElementById("accurateInformation")
+            .checked;
+
+
+
+    if (!terms || !accurate) {
+
+        alert(
+            "Please agree to both statements before submitting your application."
+        );
+
+        return;
+
+    }
+
+
+
+    document
+        .querySelector(".application-step.active")
+        .classList.remove("active");
+
+
+    document
+        .getElementById("applicationSuccess")
+        .classList.add("active");
+
+
+    document
+        .querySelector(".application-progress")
+        .style.display = "none";
+
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
