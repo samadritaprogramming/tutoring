@@ -1,1 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Request a Tutor | StudyConnect</title>
+
+    <link rel="stylesheet"
+          href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================
+     NAVIGATION
+================================== -->
+
+<header class="navbar">
+
+    <a href="index.html"
+       class="logo">
+
+        Study<span>Connect</span>
+
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="find-tutor.html">
+            Find a Tutor
+        </a>
+
+        <a href="become-tutor.html">
+            Become a Tutor
+        </a>
+
+        <a href="login.html"
+           class="login-link">
+
+            Log In
+
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ==================================
+     PAGE HEADER
+================================== -->
+
+<section class="request-header">
+
+    <div class="section-label">
+        Tutor Request
+    </div>
+
+
+    <h1>
+        Request a tutor.
+    </h1>
+
+
+    <p>
+        Tell us a little about the student and what
+        they're looking for. Your request will be
+        reviewed before a connection is made.
+    </p>
+
+</section>
+
+
+
+<!-- ==================================
+     REQUEST SECTION
+================================== -->
+
+<section class="request-section">
+
+
+<div class="request-layout">
+
+
+<!-- ==================================
+     FORM
+================================== -->
+
+<div class="request-card">
+
+
+    <div class="form-heading">
+
+        <h2>
+            Student Information
+        </h2>
+
+        <p>
+            Please provide the information needed
+            to help us understand the student's needs.
+        </p>
+
+    </div>
+
+
+
+    <!-- PARENT NAME -->
+
+    <div class="form-group">
+
+        <label for="parentName">
+            Parent / Guardian Name
+        </label>
+
+        <input
+            type="text"
+            id="parentName"
+            placeholder="Sarah Smith"
+            required
+        >
+
+    </div>
+
+
+
+    <!-- PARENT EMAIL -->
+
+    <div class="form-group">
+
+        <label for="parentEmail">
+            Parent / Guardian Email
+        </label>
+
+        <input
+            type="email"
+            id="parentEmail"
+            placeholder="sarah@example.com"
+            required
+        >
+
+        <small>
+            We'll use this email to communicate about
+            your request.
+        </small>
+
+    </div>
+
+
+
+    <!-- STUDENT NAME -->
+
+    <div class="form-group">
+
+        <label for="studentName">
+            Student's First Name
+        </label>
+
+        <input
+            type="text"
+            id="studentName"
+            placeholder="Emma"
+            required
+        >
+
+    </div>
+
+
+
+    <!-- GRADE -->
+
+    <div class="form-group">
+
+        <label for="studentGrade">
+            Student's Grade
+        </label>
+
+        <select id="studentGrade"
+                required>
+
+            <option value="">
+                Select grade
+            </option>
+
+            <option value="Elementary">
+                Elementary
+            </option>
+
+            <option value="Middle School">
+                Middle School
+            </option>
+
+            <option value="9th Grade">
+                9th Grade
+            </option>
+
+            <option value="10th Grade">
+                10th Grade
+            </option>
+
+            <option value="11th Grade">
+                11th Grade
+            </option>
+
+            <option value="12th Grade">
+                12th Grade
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <!-- SUBJECT -->
+
+    <div class="form-group">
+
+        <label for="subject">
+            Subject Needed
+        </label>
+
+        <select id="subject"
+                required>
+
+            <option value="">
+                Select subject
+            </option>
+
+            <option value="Math">
+                Math
+            </option>
+
+            <option value="Science">
+                Science
+            </option>
+
+            <option value="English">
+                English
+            </option>
+
+            <option value="History">
+                History
+            </option>
+
+            <option value="Computer Science">
+                Computer Science
+            </option>
+
+            <option value="Spanish">
+                Spanish
+            </option>
+
+            <option value="French">
+                French
+            </option>
+
+            <option value="Other">
+                Other
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <!-- LEARNING NEEDS -->
+
+    <div class="form-group">
+
+        <label for="studentNeeds">
+            What does the student need help with?
+        </label>
+
+        <p class="field-description">
+            Give the tutor a little context about what
+            the student is currently working on.
+        </p>
+
+
+        <textarea
+            id="studentNeeds"
+            rows="6"
+            maxlength="800"
+            placeholder="For example: Emma is currently working on Algebra II and would like help understanding quadratic functions and preparing for upcoming tests."
+            required
+        ></textarea>
+
+
+        <div class="character-count">
+
+            <span id="needsCount">
+                0
+            </span>
+
+            / 800
+
+        </div>
+
+    </div>
+
+
+
+    <!-- TUTORING FORMAT -->
+
+    <div class="form-group">
+
+        <label>
+            Preferred Tutoring Format
+        </label>
+
+
+        <div class="request-options">
+
+
+            <button
+                type="button"
+                class="request-option selected"
+                data-format="Online"
+                onclick="selectFormat(this)"
+            >
+
+                <span class="request-option-icon">
+                    💻
+                </span>
+
+
+                <div>
+
+                    <strong>
+                        Online
+                    </strong>
+
+                    <small>
+                        Virtual tutoring
+                    </small>
+
+                </div>
+
+            </button>
+
+
+
+            <button
+                type="button"
+                class="request-option"
+                data-format="In Person"
+                onclick="selectFormat(this)"
+            >
+
+                <span class="request-option-icon">
+                    👥
+                </span>
+
+
+                <div>
+
+                    <strong>
+                        In Person
+                    </strong>
+
+                    <small>
+                        Face-to-face tutoring
+                    </small>
+
+                </div>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ADDITIONAL INFORMATION -->
+
+    <div class="form-group">
+
+        <label for="additionalInfo">
+            Anything else we should know?
+        </label>
+
+        <textarea
+            id="additionalInfo"
+            rows="4"
+            placeholder="Optional"
+        ></textarea>
+
+    </div>
+
+
+
+    <!-- AGREEMENT -->
+
+    <div class="request-agreement">
+
+
+        <label class="checkbox-row">
+
+            <input
+                type="checkbox"
+                id="parentAgreement"
+            >
+
+            <span>
+
+                I am the parent or legal guardian
+                submitting this request and confirm
+                that the information provided is accurate.
+
+            </span>
+
+        </label>
+
+
+    </div>
+
+
+
+    <!-- SUBMIT -->
+
+    <button
+        type="button"
+        class="primary-button request-submit"
+        onclick="submitRequest()"
+    >
+
+        Submit Tutor Request
+
+        <span>
+            →
+        </span>
+
+    </button>
+
+
+</div>
+
+
+
+<!-- ==================================
+     SELECTED TUTOR
+================================== -->
+
+<aside class="selected-tutor-card">
+
+
+    <div class="selected-tutor-label">
+        Your Selected Tutor
+    </div>
+
+
+    <div class="selected-tutor-profile">
+
+
+        <div class="selected-tutor-avatar">
+            MP
+        </div>
+
+
+        <div>
+
+            <h3>
+                Maya Patel
+            </h3>
+
+
+            <div class="verified-badge">
+                ✓ Verified Tutor
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="selected-tutor-divider"></div>
+
+
+
+    <div class="selected-tutor-info">
+
+
+        <div>
+
+            <span>
+                Subjects
+            </span>
+
+            <strong>
+                Math · Science
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                Grades
+            </span>
+
+            <strong>
+                9th · 10th
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                Format
+            </span>
+
+            <strong>
+                Online
+            </strong>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- PRIVACY -->
+
+    <div class="selected-tutor-privacy">
+
+        <div class="privacy-icon">
+            🔒
+        </div>
+
+
+        <div>
+
+            <strong>
+                Private connection
+            </strong>
+
+            <p>
+                The tutor's email address and phone
+                number are not publicly displayed.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <a href="tutor-profile.html?id=maya-patel"
+       class="change-tutor">
+
+        ← View Tutor Profile
+
+    </a>
+
+
+</aside>
+
+
+</div>
+
+</section>
+
+
+
+<!-- ==================================
+     HOW REQUESTS WORK
+================================== -->
+
+<section class="request-process">
+
+
+    <div class="section-heading">
+
+        <div class="section-label">
+            What happens next?
+        </div>
+
+        <h2>
+            A simple, protected process.
+        </h2>
+
+    </div>
+
+
+
+    <div class="request-steps">
+
+
+        <!-- STEP 1 -->
+
+        <div class="request-step">
+
+            <div class="request-step-number">
+                01
+            </div>
+
+            <h3>
+                Submit
+            </h3>
+
+            <p>
+                Tell us what the student needs
+                and submit your tutor request.
+            </p>
+
+        </div>
+
+
+
+        <div class="request-step-line"></div>
+
+
+
+        <!-- STEP 2 -->
+
+        <div class="request-step">
+
+            <div class="request-step-number">
+                02
+            </div>
+
+            <h3>
+                Review
+            </h3>
+
+            <p>
+                The request is reviewed before
+                personal contact information is shared.
+            </p>
+
+        </div>
+
+
+
+        <div class="request-step-line"></div>
+
+
+
+        <!-- STEP 3 -->
+
+        <div class="request-step">
+
+            <div class="request-step-number">
+                03
+            </div>
+
+            <h3>
+                Connect
+            </h3>
+
+            <p>
+                Once approved, the parent and tutor
+                can move forward with the connection.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================
+     SUCCESS MESSAGE
+================================== -->
+
+<section class="request-success"
+         id="requestSuccess">
+
+
+    <div class="success-circle">
+        ✓
+    </div>
+
+
+    <div class="section-label">
+        Request submitted
+    </div>
+
+
+    <h2>
+        Your request is on its way.
+    </h2>
+
+
+    <p>
+        We've received your tutor request and will
+        review it before a connection is made.
+    </p>
+
+
+    <div class="success-note">
+
+        <strong>
+            What happens next?
+        </strong>
+
+        <span>
+            You'll receive an email when your request
+            has been reviewed.
+        </span>
+
+    </div>
+
+
+    <a href="find-tutor.html"
+       class="secondary-button">
+
+        Browse More Tutors
+
+    </a>
+
+
+    <a href="index.html"
+       class="primary-button">
+
+        Back to Home
+
+    </a>
+
+
+</section>
+
+
+</main>
+
+
+
+<!-- ==================================
+     FOOTER
+================================== -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <a href="index.html"
+           class="logo footer-logo">
+
+            Study<span>Connect</span>
+
+        </a>
+
+
+        <p>
+            Connecting students with trusted tutors.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="find-tutor.html">
+            Find a Tutor
+        </a>
+
+        <a href="become-tutor.html">
+            Become a Tutor
+        </a>
+
+        <a href="terms.html">
+            Terms
+        </a>
+
+        <a href="privacy.html">
+            Privacy
+        </a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 StudyConnect. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==================================
+     JAVASCRIPT
+================================== -->
+
+<script>
+
+
+/* =================================
+   SELECT TUTORING FORMAT
+================================= */
+
+function selectFormat(element) {
+
+    document
+        .querySelectorAll(".request-option")
+        .forEach(option => {
+
+            option.classList.remove("selected");
+
+        });
+
+
+    element.classList.add("selected");
+
+}
+
+
+
+/* =================================
+   CHARACTER COUNTER
+================================= */
+
+const needsField =
+    document.getElementById("studentNeeds");
+
+
+const needsCount =
+    document.getElementById("needsCount");
+
+
+needsField.addEventListener(
+    "input",
+    function () {
+
+        needsCount.textContent =
+            this.value.length;
+
+    }
+);
+
+
+
+/* =================================
+   SUBMIT REQUEST
+================================= */
+
+function submitRequest() {
+
+
+    const parentName =
+        document
+            .getElementById("parentName")
+            .value
+            .trim();
+
+
+    const parentEmail =
+        document
+            .getElementById("parentEmail")
+            .value
+            .trim();
+
+
+    const studentName =
+        document
+            .getElementById("studentName")
+            .value
+            .trim();
+
+
+    const grade =
+        document
+            .getElementById("studentGrade")
+            .value;
+
+
+    const subject =
+        document
+            .getElementById("subject")
+            .value;
+
+
+    const needs =
+        document
+            .getElementById("studentNeeds")
+            .value
+            .trim();
+
+
+    const agreement =
+        document
+            .getElementById("parentAgreement")
+            .checked;
+
+
+
+    /* Validation */
+
+    if (
+        !parentName ||
+        !parentEmail ||
+        !studentName ||
+        !grade ||
+        !subject ||
+        !needs
+    ) {
+
+        alert(
+            "Please complete all required fields before submitting."
+        );
+
+        return;
+
+    }
+
+
+
+    if (!agreement) {
+
+        alert(
+            "Please confirm that you are the parent or legal guardian submitting this request."
+        );
+
+        return;
+
+    }
+
+
+
+    /* Hide form */
+
+    document
+        .querySelector(".request-section")
+        .style.display = "none";
+
+
+    document
+        .querySelector(".request-process")
+        .style.display = "none";
+
+
+
+    /* Show success */
+
+    document
+        .getElementById("requestSuccess")
+        .classList.add("active");
+
+
+
+    /* Scroll */
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+}
+
+
+</script>
+
+
+</body>
+
+</html>
