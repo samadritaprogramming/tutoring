@@ -1,1 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find a Tutor | StudyConnect</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     NAVIGATION
+============================== -->
+
+<header class="navbar">
+
+    <a href="index.html" class="logo">
+        Study<span>Connect</span>
+    </a>
+
+
+    <nav class="nav-links">
+
+        <a href="find-tutor.html" class="active">
+            Find a Tutor
+        </a>
+
+        <a href="become-tutor.html">
+            Become a Tutor
+        </a>
+
+        <a href="login.html" class="login-link">
+            Log In
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- ==============================
+     PAGE HEADER
+============================== -->
+
+<section class="directory-header">
+
+    <div class="section-label">
+        Find your match
+    </div>
+
+
+    <h1>
+        Find a tutor who fits your needs.
+    </h1>
+
+
+    <p>
+        Browse verified tutors by subject and grade level.
+        Personal contact information is never publicly displayed.
+    </p>
+
+</section>
+
+
+
+<!-- ==============================
+     SEARCH + FILTERS
+============================== -->
+
+<section class="tutor-directory">
+
+
+    <div class="directory-controls">
+
+
+        <!-- SEARCH -->
+
+        <div class="search-wrapper">
+
+            <span class="search-icon">
+                ⌕
+            </span>
+
+            <input
+                type="text"
+                id="tutorSearch"
+                placeholder="Search by tutor name or subject..."
+            >
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div class="filter-wrapper">
+
+            <label for="subjectFilter">
+                Subject
+            </label>
+
+            <select id="subjectFilter">
+
+                <option value="all">
+                    All Subjects
+                </option>
+
+                <option value="math">
+                    Math
+                </option>
+
+                <option value="science">
+                    Science
+                </option>
+
+                <option value="english">
+                    English
+                </option>
+
+                <option value="history">
+                    History
+                </option>
+
+                <option value="computer-science">
+                    Computer Science
+                </option>
+
+                <option value="spanish">
+                    Spanish
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-wrapper">
+
+            <label for="gradeFilter">
+                Grade
+            </label>
+
+            <select id="gradeFilter">
+
+                <option value="all">
+                    All Grades
+                </option>
+
+                <option value="elementary">
+                    Elementary
+                </option>
+
+                <option value="middle-school">
+                    Middle School
+                </option>
+
+                <option value="9">
+                    9th Grade
+                </option>
+
+                <option value="10">
+                    10th Grade
+                </option>
+
+                <option value="11">
+                    11th Grade
+                </option>
+
+                <option value="12">
+                    12th Grade
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==============================
+         ACTIVE FILTERS
+    ============================== -->
+
+    <div class="active-filters">
+
+        <span>
+            Showing verified tutors
+        </span>
+
+        <button id="clearFilters">
+            Clear filters
+        </button>
+
+    </div>
+
+
+
+    <!-- ==============================
+         RESULTS HEADER
+    ============================== -->
+
+    <div class="results-header">
+
+        <div>
+
+            <h2>
+                Available Tutors
+            </h2>
+
+            <p id="resultsCount">
+                4 tutors found
+            </p>
+
+        </div>
+
+
+        <select id="sortTutors"
+                class="sort-select">
+
+            <option value="recommended">
+                Recommended
+            </option>
+
+            <option value="name">
+                Name A–Z
+            </option>
+
+        </select>
+
+    </div>
+
+
+
+    <!-- ==============================
+         TUTOR CARDS
+    ============================== -->
+
+    <div class="tutor-grid"
+         id="tutorGrid">
+
+
+        <!-- TUTOR 1 -->
+
+        <article class="tutor-card"
+                 data-name="maya patel"
+                 data-subjects="math science"
+                 data-grades="9 10">
+
+            <div class="tutor-card-top">
+
+                <div class="tutor-avatar">
+                    MP
+                </div>
+
+
+                <div class="tutor-basic-info">
+
+                    <h3>
+                        Maya Patel
+                    </h3>
+
+                    <div class="verified-badge">
+                        ✓ Verified Tutor
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="tutor-introduction">
+
+                I enjoy breaking difficult concepts into
+                simple steps and helping students become
+                more confident in math and science.
+
+            </p>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Subjects
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        Math
+                    </span>
+
+                    <span class="tag">
+                        Science
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Grades
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        9th
+                    </span>
+
+                    <span class="tag">
+                        10th
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="tutor-profile.html?id=maya-patel"
+               class="view-profile-button">
+
+                View Profile
+
+                <span>→</span>
+
+            </a>
+
+        </article>
+
+
+
+        <!-- TUTOR 2 -->
+
+        <article class="tutor-card"
+                 data-name="daniel kim"
+                 data-subjects="computer-science math"
+                 data-grades="middle-school 9 10">
+
+            <div class="tutor-card-top">
+
+                <div class="tutor-avatar blue">
+                    DK
+                </div>
+
+
+                <div class="tutor-basic-info">
+
+                    <h3>
+                        Daniel Kim
+                    </h3>
+
+                    <div class="verified-badge">
+                        ✓ Verified Tutor
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="tutor-introduction">
+
+                I'm passionate about programming and love
+                helping students understand computer science
+                through hands-on examples.
+
+            </p>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Subjects
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        Computer Science
+                    </span>
+
+                    <span class="tag">
+                        Math
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Grades
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        Middle School
+                    </span>
+
+                    <span class="tag">
+                        9th
+                    </span>
+
+                    <span class="tag">
+                        10th
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="tutor-profile.html?id=daniel-kim"
+               class="view-profile-button">
+
+                View Profile
+
+                <span>→</span>
+
+            </a>
+
+        </article>
+
+
+
+        <!-- TUTOR 3 -->
+
+        <article class="tutor-card"
+                 data-name="sophia williams"
+                 data-subjects="english history"
+                 data-grades="middle-school 9 10">
+
+            <div class="tutor-card-top">
+
+                <div class="tutor-avatar purple">
+                    SW
+                </div>
+
+
+                <div class="tutor-basic-info">
+
+                    <h3>
+                        Sophia Williams
+                    </h3>
+
+                    <div class="verified-badge">
+                        ✓ Verified Tutor
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="tutor-introduction">
+
+                I love helping students improve their writing,
+                reading comprehension, and confidence in the
+                humanities.
+
+            </p>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Subjects
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        English
+                    </span>
+
+                    <span class="tag">
+                        History
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Grades
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        Middle School
+                    </span>
+
+                    <span class="tag">
+                        9th
+                    </span>
+
+                    <span class="tag">
+                        10th
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="tutor-profile.html?id=sophia-williams"
+               class="view-profile-button">
+
+                View Profile
+
+                <span>→</span>
+
+            </a>
+
+        </article>
+
+
+
+        <!-- TUTOR 4 -->
+
+        <article class="tutor-card"
+                 data-name="ethan rodriguez"
+                 data-subjects="math"
+                 data-grades="elementary middle-school 9">
+
+            <div class="tutor-card-top">
+
+                <div class="tutor-avatar green">
+                    ER
+                </div>
+
+
+                <div class="tutor-basic-info">
+
+                    <h3>
+                        Ethan Rodriguez
+                    </h3>
+
+                    <div class="verified-badge">
+                        ✓ Verified Tutor
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <p class="tutor-introduction">
+
+                My goal is to make math feel less intimidating
+                by working through problems together step
+                by step.
+
+            </p>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Subjects
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        Math
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div class="tutor-info-section">
+
+                <span class="info-label">
+                    Grades
+                </span>
+
+
+                <div class="tag-container">
+
+                    <span class="tag">
+                        Elementary
+                    </span>
+
+                    <span class="tag">
+                        Middle School
+                    </span>
+
+                    <span class="tag">
+                        9th
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <a href="tutor-profile.html?id=ethan-rodriguez"
+               class="view-profile-button">
+
+                View Profile
+
+                <span>→</span>
+
+            </a>
+
+        </article>
+
+
+    </div>
+
+
+
+    <!-- ==============================
+         NO RESULTS
+    ============================== -->
+
+    <div class="no-results"
+         id="noResults">
+
+        <div class="no-results-icon">
+            🔎
+        </div>
+
+        <h3>
+            No tutors found
+        </h3>
+
+        <p>
+            Try changing your search or filters.
+        </p>
+
+        <button id="resetSearch"
+                class="secondary-button">
+
+            Clear Search
+
+        </button>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- ==============================
+     PRIVACY NOTE
+============================== -->
+
+<section class="directory-privacy">
+
+    <div class="privacy-icon">
+        🔒
+    </div>
+
+
+    <div>
+
+        <h3>
+            Your privacy matters.
+        </h3>
+
+        <p>
+            Tutor phone numbers and email addresses are
+            never publicly displayed. When you request a
+            tutor, the connection can be reviewed before
+            personal contact information is shared.
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+
+<!-- ==============================
+     FOOTER
+============================== -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <a href="index.html" class="logo footer-logo">
+            Study<span>Connect</span>
+        </a>
+
+        <p>
+            Connecting students with trusted tutors.
+        </p>
+
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="find-tutor.html">
+            Find a Tutor
+        </a>
+
+        <a href="become-tutor.html">
+            Become a Tutor
+        </a>
+
+        <a href="terms.html">
+            Terms
+        </a>
+
+        <a href="privacy.html">
+            Privacy
+        </a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 StudyConnect. All rights reserved.
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==============================
+     FILTER JAVASCRIPT
+============================== -->
+
+<script>
+
+const searchInput =
+    document.getElementById("tutorSearch");
+
+const subjectFilter =
+    document.getElementById("subjectFilter");
+
+const gradeFilter =
+    document.getElementById("gradeFilter");
+
+const clearFilters =
+    document.getElementById("clearFilters");
+
+const resetSearch =
+    document.getElementById("resetSearch");
+
+const tutorCards =
+    document.querySelectorAll(".tutor-card");
+
+const noResults =
+    document.getElementById("noResults");
+
+const resultsCount =
+    document.getElementById("resultsCount");
+
+
+
+function filterTutors() {
+
+    const search =
+        searchInput.value
+            .toLowerCase()
+            .trim();
+
+
+    const subject =
+        subjectFilter.value;
+
+
+    const grade =
+        gradeFilter.value;
+
+
+    let visibleCount = 0;
+
+
+    tutorCards.forEach(card => {
+
+        const name =
+            card.dataset.name;
+
+        const subjects =
+            card.dataset.subjects;
+
+        const grades =
+            card.dataset.grades;
+
+
+        const matchesSearch =
+            name.includes(search) ||
+            subjects.includes(search);
+
+
+        const matchesSubject =
+            subject === "all" ||
+            subjects.includes(subject);
+
+
+        const matchesGrade =
+            grade === "all" ||
+            grades.includes(grade);
+
+
+        if (
+            matchesSearch &&
+            matchesSubject &&
+            matchesGrade
+        ) {
+
+            card.style.display = "block";
+
+            visibleCount++;
+
+        } else {
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+
+    resultsCount.textContent =
+        `${visibleCount} tutor${visibleCount === 1 ? "" : "s"} found`;
+
+
+    if (visibleCount === 0) {
+
+        noResults.style.display = "block";
+
+    } else {
+
+        noResults.style.display = "none";
+
+    }
+
+}
+
+
+
+function clearAllFilters() {
+
+    searchInput.value = "";
+
+    subjectFilter.value = "all";
+
+    gradeFilter.value = "all";
+
+    filterTutors();
+
+}
+
+
+
+searchInput.addEventListener(
+    "input",
+    filterTutors
+);
+
+
+subjectFilter.addEventListener(
+    "change",
+    filterTutors
+);
+
+
+gradeFilter.addEventListener(
+    "change",
+    filterTutors
+);
+
+
+clearFilters.addEventListener(
+    "click",
+    clearAllFilters
+);
+
+
+resetSearch.addEventListener(
+    "click",
+    clearAllFilters
+);
+
+
+filterTutors();
+
+</script>
+
+
+</body>
+
+</html>
